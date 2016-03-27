@@ -203,6 +203,23 @@ footer img {
 	float: left;
 	margin-left: 10px;
 }
+.message a {
+	font-weight: 500;
+	color: #38A5DE;
+	text-decoration: underline;
+}
+.message a:hover {
+	font-weight: 500;
+	color: hotpink;
+	text-decoration: underline;
+}
+.message .client-text {
+	font-weight: 200;
+}
+.message .choice {
+	font-weight: 600;
+}
+
 .avatar {
 	display: inline-block;
 	width: 5em;
