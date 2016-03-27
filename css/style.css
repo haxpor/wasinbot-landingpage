@@ -167,17 +167,22 @@ footer img {
    filter: invert(1);
 }
 
+.convo-wrapper {
+	background-color: black;
+	max-width: none;
+}
 .convo {
 	text-align: center;
 	background-color: black;
 	width: 100%;
 	height: 100%;
-	margin-bottom: 0;
 	opacity: 0.81;
     filter: alpha(opacity=81); /* For IE8 and earlier */
     z-index: 1;
     display: block;
     position: relative;
+    max-width: 57.7em;
+    margin: 0 auto;
 }
 .convo .first-convo-space {
 	padding-top: 100px;
