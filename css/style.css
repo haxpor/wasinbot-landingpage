@@ -111,6 +111,10 @@ footer img {
 	color: hotpink;
 	text-decoration: underline;
 }
+.border-and-shadow {
+	border-radius: 100%;
+	box-shadow: 3px 3px 5px #AAAAAA;
+}
 
 .btn-lg {
 	font-size: 36px;
@@ -167,24 +171,84 @@ footer img {
 	text-align: center;
 	background-color: black;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	margin-bottom: 0;
 	opacity: 0.81;
     filter: alpha(opacity=81); /* For IE8 and earlier */
     z-index: 1;
+    display: block;
+    position: relative;
 }
-.verticalline {
-	background-color: #000;
-	opacity: 0.90;
-	filter: alpha(opacity=90);
-	border: 1px dashed white;
-	border-width: 2px;
-	width: 2px;
-	height: 100%;
-	z-index: 0;
+.convo .first-convo-space {
+	padding-top: 100px;
+}
+.convo .last-convo-space {
+	padding-bottom: 150px;
+}
+.convo .y-space {
+	padding-top: 25px;
+	clear: both;
+}
+.message {
+	display: inline-block;
+	vertical-align: bottom;
 	position: relative;
-	left: 50%;
-	top: 0;
+	z-index: 1;
+}
+.message.right {
+	float: right;
+	margin-right: 10px;
+}
+.message.left {
+	float: left;
+	margin-left: 10px;
+}
+.avatar {
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	vertical-align: top;
+	border-radius: 100%;
+	background-color: #000;
+}
+.right .avatar {
+	float: left;
+}
+.left .avatar {
+	float: right;
+}
+.wasinbot .avatar {
+	background-image: url('../images/haxporAvatar.png');
+	background-size: cover;
+	background-position: center;
+}
+.user .avatar {
+	background-image: url('../images/userAvatar.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.bubble {
+	display: inline-block;
+	text-align: left;
+	border-radius: 0.5em;
+	background-color: #DCDCDC;
+	padding: 1em;
+	max-width: 350px;
+}
+.right .bubble {
+	margin-left: 10px;
+}
+.left .bubble {
+	margin-right: 10px;
+}
+.bubble .name {
+	color: #e74c3c;
+	font-size: 23px;
+}
+.bubble .text {
+	color: black;
+	font-size: 18px;
 }
 
 .chatnow {
@@ -224,6 +288,27 @@ div.by-text {
 }
 
 /* Responsive design */
+@media (min-width: 320px) {
+	.bubble {
+		width: 200px;
+	}
+}
+@media (min-width: 375px) {
+	.bubble {
+		width: 250px;
+	}
+}
+@media (min-width: 414px) {
+	.bubble {
+		width: 275px;
+	}
+}
+@media (min-width: 900px) {
+	.bubble {
+		width: 350px;
+	}
+}
+
 @media (max-width: 320px) {
 	.jumbotron h1 {
 		font-size: 26px;
@@ -299,5 +384,21 @@ div.by-text {
 
 	#get-involved div.col-md-4 {
 		margin-bottom: 35px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.verticalline {
+		background-color: #000;
+		opacity: 0.90;
+		filter: alpha(opacity=90);
+		border: 1px dashed white;
+		border-width: 2px;
+		width: 2px;
+		height: 100%;
+		z-index: 0;
+		position: absolute;
+		left: 49.7%;
+		top: 0;
 	}
 }

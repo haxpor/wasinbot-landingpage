@@ -12,8 +12,8 @@
 
 	<title>WasinBot</title>
 
-	<!-- Google Analytics -->
-	<script>
+	<!-- Google Analytics (uncomment this when use in production) -->
+	<!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -22,11 +22,12 @@
   ga('create', 'UA-59218221-2', 'auto');
   ga('send', 'pageview');
 
-	</script>
+	</script>-->
 
 	<link href='libs/GoogleFont/Arvo.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="libs/emoji-css/emoji.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -63,7 +64,7 @@
 	  <div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img src="images/haxporAvatar.png" alt="haxpor logo" title="haxpor logo" style="margin-top: 23px;">
+					<img src="images/haxporAvatar.png" class="border-and-shadow" alt="haxpor logo" title="haxpor logo" style="margin-top: 23px;">
 				</div>
 				<div class="col-md-6 telegram-link">
 					<h2><span class="add-prefix">@</span>WasinBot</h2>
@@ -109,6 +110,48 @@
 
 	<div class="convo">
 		<div class="verticalline"></div>
+		<div class="first-convo-space"></div>
+		<div class="message right wasinbot">
+			<div class="avatar"></div>
+			<div class="bubble">
+				<div class="name">WasinBot</div>
+				<div class="text">Greeting to you!</div>
+			</div>
+		</div>
+
+		<div class="y-space"></div>
+		<div class="message right wasinbot">
+			<div class="avatar"></div>
+			<div class="bubble">
+				<div class="name">WasinBot</div>
+				<div class="text">I will help you get down to do business with Wasin, or even be friend with him 24/7.</div>
+			</div>
+		</div>
+
+		<div class="y-space"></div>
+		<div class="message right wasinbot">
+			<div class="avatar"></div>
+			<div class="bubble">
+				<div class="name">WasinBot</div>
+				<div class="text">
+				What can I help you with?<br/>
+				<i class="em em-dollar"></i>  Business<br/>
+				<i class="em em-smile"></i>  Personal
+				</div>
+			</div>
+		</div>
+
+		<div class="y-space"></div>
+		<div class="message left user">
+			<div class="avatar"></div>
+			<div class="bubble">
+				<div class="name">haxpor</div>
+				<div class="text">
+				Let me know you more first :)
+				</div>
+			</div>
+		</div>
+		<div class="last-convo-space"></div>
 	</div>
 
 	<div class="chatnow" id="chatnow">
@@ -126,7 +169,7 @@
 
 	<footer>
 	  <div class="container">
-		<img src="images/haxporAvatar.png" alt="haxpor logo" title="haxpor logo" width="128" height="128">
+		<img src="images/haxporAvatar.png" alt="haxpor logo" title="haxpor logo" width="128" height="128" class="border-and-shadow">
 		<p>© 2016 WasinBot. All rights reserved.</p>
 	  </div>
 	</footer>
